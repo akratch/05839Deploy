@@ -1,0 +1,346 @@
+(base) adamkratch@MacBook-Pro ArtsNCrafts % python FP_TweetMiner_AAPL.py
+(122.25, 15.0, 3.0, datetime.datetime(2020, 12, 6, 22, 45, 24, 25175))
+(122.25, 16.0, 3.0, datetime.datetime(2020, 12, 6, 22, 46, 24, 993767))
+(122.25, 16.0, 3.0, datetime.datetime(2020, 12, 6, 22, 47, 25, 777385))
+Loop Complete
+[(122.25, 15.0, 3.0, datetime.datetime(2020, 12, 6, 22, 45, 24, 25175)), (122.25, 16.0, 3.0, datetime.datetime(2020, 12, 6, 22, 46, 24, 993767)), (122.25, 16.0, 3.0, datetime.datetime(2020, 12, 6, 22, 47, 25, 777385))]
+
+
+Positive tweets:
+@Stalingrad_Poor Obey your overlords!  Buy ten shares of #aapl and say five Hail Mary’s outside your shuttered plac… https://t.co/U9DtG1hDEs
+Weird looking iPhone Tim. 
+
+$AAPL $TSLA https://t.co/RxWXpvG3G2
+AIM (a fund) owned almost 6% of $AAPL in 2001. Not sure where they are today but need the right capital base and th… https://t.co/ZDpog6enjg
+
+
+Negative tweets:
+@Stalingrad_Poor Obey your overlords!  Buy ten shares of #aapl and say five Hail Mary’s outside your shuttered plac… https://t.co/U9DtG1hDEs
+Weird looking iPhone Tim. 
+
+$AAPL $TSLA https://t.co/RxWXpvG3G2
+AIM (a fund) owned almost 6% of $AAPL in 2001. Not sure where they are today but need the right capital base and th… https://t.co/ZDpog6enjg
+(base) adamkratch@MacBook-Pro ArtsNCrafts % python FP_TweetMiner_BTC.py 
+Mining Tweets
+Traceback (most recent call last):
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1619, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1627, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "FP_TweetMiner_BTC.py", line 180, in <module>
+    main()
+  File "FP_TweetMiner_BTC.py", line 119, in main
+    print(BTC[0])
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/site-packages/pandas/core/frame.py", line 2800, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1619, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1627, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+(base) adamkratch@MacBook-Pro ArtsNCrafts % python FP_TweetMiner_BTC.py 
+Mining Tweets
+<bound method NDFrame.head of        Symbol  ... Circulating Supply
+0     BTC-USD  ...       1.856400e+07
+1     ETH-USD  ...       1.137280e+08
+2     XRP-USD  ...       4.533400e+10
+3    USDT-USD  ...       1.968200e+10
+4     LTC-USD  ...       6.603200e+07
+..        ...  ...                ...
+95    CVC-USD  ...       6.700000e+08
+96  STORJ-USD  ...       2.002520e+08
+97   IOTX-USD  ...       9.644000e+09
+98    KMD-USD  ...       1.230330e+08
+99  STEEM-USD  ...       3.879330e+08
+
+[100 rows x 10 columns]>
+^Z
+zsh: suspended  python FP_TweetMiner_BTC.py
+(base) adamkratch@MacBook-Pro ArtsNCrafts % python FP_TweetMiner_BTC.py
+Mining Tweets
+Traceback (most recent call last):
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1619, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1627, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "FP_TweetMiner_BTC.py", line 181, in <module>
+    main()
+  File "FP_TweetMiner_BTC.py", line 119, in main
+    btcp = BTC["Price"].tolist()
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/site-packages/pandas/core/frame.py", line 2800, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1619, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1627, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Price'
+(base) adamkratch@MacBook-Pro ArtsNCrafts % python FP_TweetMiner_BTC.py
+Mining Tweets
+19281.06
+^Z
+zsh: suspended  python FP_TweetMiner_BTC.py
+(base) adamkratch@MacBook-Pro ArtsNCrafts % python FP_TweetMiner_BTC.py
+Mining Tweets
+^Z
+zsh: suspended  python FP_TweetMiner_BTC.py
+(base) adamkratch@MacBook-Pro ArtsNCrafts % python FP_TweetMiner_BTC.py
+Mining Tweets
+(19285.05, 33.673469387755105, 8.16326530612245, datetime.datetime(2020, 12, 6, 22, 58, 12, 746840))
+Mining Tweets
+(19285.51, 32.98969072164948, 9.278350515463918, datetime.datetime(2020, 12, 6, 22, 59, 14, 662260))
+^Z
+zsh: suspended  python FP_TweetMiner_BTC.py
+(base) adamkratch@MacBook-Pro ArtsNCrafts % python FP_TweetMiner_BTC.py
+(19287.13, 34.02061855670103, 11.34020618556701, datetime.datetime(2020, 12, 6, 23, 0, 17, 753939))
+^Z
+zsh: suspended  python FP_TweetMiner_BTC.py
+(base) adamkratch@MacBook-Pro ArtsNCrafts % python FP_TweetMiner_SPY.py 
+(369.8500061035156, 32.0, 11.0, datetime.datetime(2020, 12, 6, 23, 1, 27, 574524))
+(369.8500061035156, 25.0, 12.5, datetime.datetime(2020, 12, 6, 23, 2, 28, 615608))
+^Z
+zsh: suspended  python FP_TweetMiner_SPY.py
+(base) adamkratch@MacBook-Pro ArtsNCrafts % python FP_TweetMiner_SPY.py
+(368.875, 30.0, 12.0, datetime.datetime(2020, 12, 7, 9, 52, 1, 297876))
+(368.8800048828125, 25.510204081632654, 15.306122448979592, datetime.datetime(2020, 12, 7, 9, 53, 2, 284664))
+(368.9599914550781, 25.0, 10.0, datetime.datetime(2020, 12, 7, 9, 54, 3, 259445))
+(368.94000244140625, 30.0, 6.0, datetime.datetime(2020, 12, 7, 9, 55, 4, 152614))
+(368.8622131347656, 27.0, 14.0, datetime.datetime(2020, 12, 7, 9, 56, 5, 209640))
+(368.9549865722656, 19.387755102040817, 22.448979591836736, datetime.datetime(2020, 12, 7, 9, 57, 6, 250520))
+(368.9750061035156, 21.0, 14.0, datetime.datetime(2020, 12, 7, 9, 58, 7, 316346))
+(369.19000244140625, 27.551020408163264, 14.285714285714286, datetime.datetime(2020, 12, 7, 9, 59, 8, 181177))
+(369.3900146484375, 28.0, 9.0, datetime.datetime(2020, 12, 7, 10, 0, 9, 81664))
+(369.2900085449219, 32.0, 10.0, datetime.datetime(2020, 12, 7, 10, 1, 10, 151049))
+(369.2698059082031, 25.252525252525253, 13.131313131313131, datetime.datetime(2020, 12, 7, 10, 2, 11, 88995))
+(369.1805114746094, 29.292929292929294, 10.1010101010101, datetime.datetime(2020, 12, 7, 10, 3, 11, 929796))
+(369.1499938964844, 28.571428571428573, 18.367346938775512, datetime.datetime(2020, 12, 7, 10, 4, 12, 970573))
+(369.17999267578125, 32.0, 11.0, datetime.datetime(2020, 12, 7, 10, 5, 13, 890249))
+(369.17999267578125, 32.6530612244898, 10.204081632653061, datetime.datetime(2020, 12, 7, 10, 6, 14, 872810))
+(369.1600036621094, 28.42105263157895, 9.473684210526315, datetime.datetime(2020, 12, 7, 10, 7, 15, 936018))
+(369.2492980957031, 26.0, 21.0, datetime.datetime(2020, 12, 7, 10, 8, 16, 934514))
+(369.2300109863281, 24.0, 15.0, datetime.datetime(2020, 12, 7, 10, 9, 17, 967580))
+(369.32000732421875, 43.0, 10.0, datetime.datetime(2020, 12, 7, 10, 10, 19, 32556))
+(369.3699951171875, 24.0, 14.0, datetime.datetime(2020, 12, 7, 10, 11, 20, 46685))
+(369.3699951171875, 39.0, 8.0, datetime.datetime(2020, 12, 7, 10, 12, 20, 995602))
+(369.3949890136719, 22.0, 19.0, datetime.datetime(2020, 12, 7, 10, 13, 22, 574))
+(369.3599853515625, 37.0, 11.0, datetime.datetime(2020, 12, 7, 10, 14, 22, 924000))
+(369.4200134277344, 31.0, 9.0, datetime.datetime(2020, 12, 7, 10, 15, 23, 971453))
+(369.3203125, 24.0, 15.0, datetime.datetime(2020, 12, 7, 10, 16, 25, 16422))
+(369.2300109863281, 30.0, 9.0, datetime.datetime(2020, 12, 7, 10, 17, 26, 213461))
+(369.2699890136719, 34.343434343434346, 17.171717171717173, datetime.datetime(2020, 12, 7, 10, 18, 27, 131990))
+(369.3299865722656, 27.0, 11.0, datetime.datetime(2020, 12, 7, 10, 19, 28, 189443))
+(369.3880920410156, 26.262626262626263, 10.1010101010101, datetime.datetime(2020, 12, 7, 10, 20, 30, 12902))
+(369.3500061035156, 32.323232323232325, 12.121212121212121, datetime.datetime(2020, 12, 7, 10, 21, 31, 64623))
+(369.32000732421875, 28.0, 13.0, datetime.datetime(2020, 12, 7, 10, 22, 32, 60277))
+(369.31500244140625, 21.21212121212121, 13.131313131313131, datetime.datetime(2020, 12, 7, 10, 23, 33, 2540))
+(369.4700012207031, 33.333333333333336, 13.131313131313131, datetime.datetime(2020, 12, 7, 10, 24, 33, 944240))
+(369.3500061035156, 29.0, 8.0, datetime.datetime(2020, 12, 7, 10, 25, 34, 862308))
+(369.43499755859375, 33.333333333333336, 12.121212121212121, datetime.datetime(2020, 12, 7, 10, 26, 35, 801030))
+(369.45001220703125, 26.0, 12.0, datetime.datetime(2020, 12, 7, 10, 27, 36, 829733))
+(369.42999267578125, 36.0, 10.0, datetime.datetime(2020, 12, 7, 10, 28, 37, 821806))
+(369.4289855957031, 32.323232323232325, 12.121212121212121, datetime.datetime(2020, 12, 7, 10, 29, 38, 845369))
+(369.44000244140625, 34.0, 9.0, datetime.datetime(2020, 12, 7, 10, 30, 39, 985541))
+(369.5198974609375, 24.0, 5.0, datetime.datetime(2020, 12, 7, 10, 31, 41, 14100))
+(369.5118103027344, 26.0, 9.0, datetime.datetime(2020, 12, 7, 10, 32, 42, 21067))
+(369.493408203125, 28.571428571428573, 16.3265306122449, datetime.datetime(2020, 12, 7, 10, 33, 42, 990014))
+(369.4718933105469, 32.0, 13.0, datetime.datetime(2020, 12, 7, 10, 34, 43, 951700))
+(369.5000915527344, 27.0, 10.0, datetime.datetime(2020, 12, 7, 10, 35, 45, 9202))
+(369.489990234375, 34.0, 8.0, datetime.datetime(2020, 12, 7, 10, 36, 46, 111664))
+(369.5, 26.0, 16.0, datetime.datetime(2020, 12, 7, 10, 37, 47, 45296))
+(369.4418029785156, 29.292929292929294, 9.090909090909092, datetime.datetime(2020, 12, 7, 10, 38, 48, 22933))
+(369.4307861328125, 33.333333333333336, 9.090909090909092, datetime.datetime(2020, 12, 7, 10, 39, 48, 988354))
+(369.41510009765625, 29.0, 10.0, datetime.datetime(2020, 12, 7, 10, 40, 50, 986665))
+(369.3599853515625, 26.0, 13.0, datetime.datetime(2020, 12, 7, 10, 41, 52, 19264))
+(369.3399963378906, 23.0, 14.0, datetime.datetime(2020, 12, 7, 10, 42, 52, 950987))
+(369.42999267578125, 26.0, 11.0, datetime.datetime(2020, 12, 7, 10, 43, 53, 960338))
+(369.3599853515625, 32.0, 13.0, datetime.datetime(2020, 12, 7, 10, 44, 54, 901584))
+(369.3750915527344, 20.0, 15.0, datetime.datetime(2020, 12, 7, 10, 45, 56, 25802))
+(369.4200134277344, 25.0, 13.0, datetime.datetime(2020, 12, 7, 10, 46, 57, 128734))
+(369.3999938964844, 29.0, 15.0, datetime.datetime(2020, 12, 7, 10, 47, 58, 81604))
+(369.42999267578125, 29.0, 14.0, datetime.datetime(2020, 12, 7, 10, 48, 59, 152488))
+(369.4617919921875, 33.0, 16.0, datetime.datetime(2020, 12, 7, 10, 50, 0, 175911))
+(369.4339904785156, 29.591836734693878, 13.26530612244898, datetime.datetime(2020, 12, 7, 10, 51, 1, 208069))
+(369.5199890136719, 32.0, 10.0, datetime.datetime(2020, 12, 7, 10, 52, 2, 215830))
+(369.5315856933594, 26.262626262626263, 12.121212121212121, datetime.datetime(2020, 12, 7, 10, 53, 3, 205060))
+(369.5199890136719, 27.0, 18.0, datetime.datetime(2020, 12, 7, 10, 54, 4, 247733))
+(369.54998779296875, 20.0, 16.0, datetime.datetime(2020, 12, 7, 10, 55, 5, 462817))
+(369.5, 22.0, 14.0, datetime.datetime(2020, 12, 7, 10, 56, 6, 493123))
+(369.4949951171875, 31.0, 9.0, datetime.datetime(2020, 12, 7, 10, 57, 7, 608603))
+(369.54998779296875, 28.0, 12.0, datetime.datetime(2020, 12, 7, 10, 58, 8, 633164))
+(369.30999755859375, 24.0, 18.0, datetime.datetime(2020, 12, 7, 10, 59, 9, 708749))
+(369.2699890136719, 28.0, 11.0, datetime.datetime(2020, 12, 7, 11, 0, 10, 711566))
+(369.3059997558594, 22.22222222222222, 13.131313131313131, datetime.datetime(2020, 12, 7, 11, 1, 11, 781369))
+(369.3500061035156, 24.0, 16.0, datetime.datetime(2020, 12, 7, 11, 2, 12, 792713))
+(369.3500061035156, 35.714285714285715, 11.224489795918368, datetime.datetime(2020, 12, 7, 11, 3, 13, 868302))
+(369.3500061035156, 29.292929292929294, 9.090909090909092, datetime.datetime(2020, 12, 7, 11, 4, 14, 782674))
+(369.4700012207031, 28.282828282828284, 18.181818181818183, datetime.datetime(2020, 12, 7, 11, 5, 15, 943247))
+(369.3999938964844, 17.0, 17.0, datetime.datetime(2020, 12, 7, 11, 6, 16, 935372))
+(369.36639404296875, 26.0, 14.0, datetime.datetime(2020, 12, 7, 11, 7, 18, 41498))
+(369.3799133300781, 35.0, 12.0, datetime.datetime(2020, 12, 7, 11, 8, 19, 37272))
+(369.4800109863281, 29.0, 9.0, datetime.datetime(2020, 12, 7, 11, 9, 20, 31482))
+(369.5, 31.632653061224488, 12.244897959183673, datetime.datetime(2020, 12, 7, 11, 10, 21, 17601))
+(369.42999267578125, 20.0, 11.0, datetime.datetime(2020, 12, 7, 11, 11, 22, 9373))
+(369.4679870605469, 30.0, 12.0, datetime.datetime(2020, 12, 7, 11, 12, 22, 865363))
+(369.5, 33.333333333333336, 11.11111111111111, datetime.datetime(2020, 12, 7, 11, 13, 23, 874035))
+(369.44000244140625, 28.571428571428573, 12.244897959183673, datetime.datetime(2020, 12, 7, 11, 14, 24, 877281))
+(369.3699951171875, 34.0, 11.0, datetime.datetime(2020, 12, 7, 11, 15, 25, 989725))
+(369.4079895019531, 27.272727272727273, 14.141414141414142, datetime.datetime(2020, 12, 7, 11, 16, 26, 949927))
+(369.3999938964844, 27.272727272727273, 15.151515151515152, datetime.datetime(2020, 12, 7, 11, 17, 28, 635))
+(369.3500061035156, 25.0, 22.0, datetime.datetime(2020, 12, 7, 11, 18, 29, 87395))
+(369.37799072265625, 31.31313131313131, 17.171717171717173, datetime.datetime(2020, 12, 7, 11, 19, 30, 418376))
+(369.31500244140625, 24.242424242424242, 16.161616161616163, datetime.datetime(2020, 12, 7, 11, 20, 31, 699383))
+(369.4664001464844, 28.0, 14.0, datetime.datetime(2020, 12, 7, 11, 21, 32, 742002))
+(369.4811096191406, 25.77319587628866, 13.402061855670103, datetime.datetime(2020, 12, 7, 11, 22, 33, 717356))
+(369.32000732421875, 28.571428571428573, 13.26530612244898, datetime.datetime(2020, 12, 7, 11, 23, 34, 877142))
+(369.3500061035156, 35.714285714285715, 11.224489795918368, datetime.datetime(2020, 12, 7, 11, 24, 35, 993316))
+(369.2699890136719, 27.551020408163264, 18.367346938775512, datetime.datetime(2020, 12, 7, 11, 25, 37, 241572))
+(369.260009765625, 23.232323232323232, 13.131313131313131, datetime.datetime(2020, 12, 7, 11, 26, 38, 228453))
+(369.364990234375, 29.0, 17.0, datetime.datetime(2020, 12, 7, 11, 27, 39, 354227))
+(369.44000244140625, 32.0, 14.0, datetime.datetime(2020, 12, 7, 11, 28, 40, 408711))
+(369.4750061035156, 23.232323232323232, 19.19191919191919, datetime.datetime(2020, 12, 7, 11, 29, 41, 425319))
+(369.4200134277344, 25.0, 16.0, datetime.datetime(2020, 12, 7, 11, 30, 42, 423570))
+(369.42999267578125, 33.0, 10.0, datetime.datetime(2020, 12, 7, 11, 31, 43, 476682))
+(369.3999938964844, 25.252525252525253, 12.121212121212121, datetime.datetime(2020, 12, 7, 11, 32, 44, 520604))
+(369.385009765625, 24.489795918367346, 16.3265306122449, datetime.datetime(2020, 12, 7, 11, 33, 45, 490132))
+(369.3424987792969, 37.0, 17.0, datetime.datetime(2020, 12, 7, 11, 34, 46, 416166))
+(369.3699951171875, 22.352941176470587, 8.235294117647058, datetime.datetime(2020, 12, 7, 11, 35, 47, 398810))
+(369.364990234375, 26.31578947368421, 14.736842105263158, datetime.datetime(2020, 12, 7, 11, 36, 48, 528104))
+(369.4100036621094, 30.303030303030305, 9.090909090909092, datetime.datetime(2020, 12, 7, 11, 37, 49, 588889))
+(369.44000244140625, 18.367346938775512, 18.367346938775512, datetime.datetime(2020, 12, 7, 11, 38, 50, 753210))
+(369.42999267578125, 21.0, 17.0, datetime.datetime(2020, 12, 7, 11, 39, 51, 848206))
+(369.42498779296875, 17.171717171717173, 19.19191919191919, datetime.datetime(2020, 12, 7, 11, 40, 52, 915073))
+(369.43011474609375, 21.0, 8.0, datetime.datetime(2020, 12, 7, 11, 41, 54, 22300))
+(369.4620056152344, 18.0, 11.0, datetime.datetime(2020, 12, 7, 11, 42, 55, 30026))
+(369.3299865722656, 26.041666666666668, 15.625, datetime.datetime(2020, 12, 7, 11, 43, 56, 94804))
+(369.3599853515625, 21.0, 21.0, datetime.datetime(2020, 12, 7, 11, 44, 57, 140134))
+(369.489990234375, 21.21212121212121, 13.131313131313131, datetime.datetime(2020, 12, 7, 11, 45, 58, 283757))
+(369.57000732421875, 17.346938775510203, 19.387755102040817, datetime.datetime(2020, 12, 7, 11, 46, 59, 274453))
+(369.5775146484375, 24.0, 17.0, datetime.datetime(2020, 12, 7, 11, 48, 0, 181283))
+(369.5, 29.0, 11.0, datetime.datetime(2020, 12, 7, 11, 49, 1, 95547))
+(369.4700012207031, 24.489795918367346, 21.428571428571427, datetime.datetime(2020, 12, 7, 11, 50, 2, 134433))
+(369.4700012207031, 24.242424242424242, 12.121212121212121, datetime.datetime(2020, 12, 7, 11, 51, 3, 241862))
+(369.4100036621094, 30.303030303030305, 9.090909090909092, datetime.datetime(2020, 12, 7, 11, 52, 4, 280218))
+(369.4100036621094, 29.292929292929294, 11.11111111111111, datetime.datetime(2020, 12, 7, 11, 53, 5, 254154))
+(369.29998779296875, 26.0, 11.0, datetime.datetime(2020, 12, 7, 11, 54, 6, 179363))
+(369.2300109863281, 30.0, 20.0, datetime.datetime(2020, 12, 7, 11, 55, 7, 159262))
+(369.1000061035156, 17.171717171717173, 19.19191919191919, datetime.datetime(2020, 12, 7, 11, 56, 8, 246405))
+(369.17279052734375, 31.0, 15.0, datetime.datetime(2020, 12, 7, 11, 57, 9, 229913))
+(369.131103515625, 31.0, 14.0, datetime.datetime(2020, 12, 7, 11, 58, 10, 350422))
+(369.2699890136719, 24.242424242424242, 13.131313131313131, datetime.datetime(2020, 12, 7, 11, 59, 11, 405248))
+(369.3399963378906, 25.0, 12.0, datetime.datetime(2020, 12, 7, 12, 0, 13, 842727))
+(369.260009765625, 23.0, 11.0, datetime.datetime(2020, 12, 7, 12, 1, 14, 750815))
+(369.3399963378906, 19.19191919191919, 18.181818181818183, datetime.datetime(2020, 12, 7, 12, 2, 15, 688781))
+(369.389892578125, 23.0, 18.0, datetime.datetime(2020, 12, 7, 12, 3, 16, 589752))
+(369.4049987792969, 20.0, 12.0, datetime.datetime(2020, 12, 7, 12, 4, 17, 604235))
+(369.42999267578125, 26.53061224489796, 13.26530612244898, datetime.datetime(2020, 12, 7, 12, 5, 18, 455921))
+(369.37701416015625, 28.0, 23.0, datetime.datetime(2020, 12, 7, 12, 6, 19, 368802))
+(369.3599853515625, 27.0, 16.0, datetime.datetime(2020, 12, 7, 12, 7, 20, 284841))
+(369.32000732421875, 22.0, 9.0, datetime.datetime(2020, 12, 7, 12, 8, 21, 240286))
+(369.3900146484375, 24.489795918367346, 19.387755102040817, datetime.datetime(2020, 12, 7, 12, 9, 22, 191770))
+(369.3900146484375, 22.0, 16.0, datetime.datetime(2020, 12, 7, 12, 10, 23, 314641))
+(369.3800048828125, 26.0, 11.0, datetime.datetime(2020, 12, 7, 12, 11, 24, 452898))
+(369.3500061035156, 24.0, 14.0, datetime.datetime(2020, 12, 7, 12, 12, 25, 392705))
+(369.3500061035156, 26.0, 8.0, datetime.datetime(2020, 12, 7, 12, 13, 26, 501731))
+(369.3349914550781, 23.0, 14.0, datetime.datetime(2020, 12, 7, 12, 14, 27, 472115))
+(369.2799987792969, 35.0, 13.0, datetime.datetime(2020, 12, 7, 12, 15, 28, 420322))
+(369.2799987792969, 24.0, 18.0, datetime.datetime(2020, 12, 7, 12, 16, 29, 528589))
+(369.135009765625, 19.0, 16.0, datetime.datetime(2020, 12, 7, 12, 17, 30, 454366))
+(369.20001220703125, 28.0, 10.0, datetime.datetime(2020, 12, 7, 12, 18, 31, 384089))
+(369.3299865722656, 24.242424242424242, 9.090909090909092, datetime.datetime(2020, 12, 7, 12, 19, 32, 429342))
+(369.2300109863281, 35.0, 10.0, datetime.datetime(2020, 12, 7, 12, 20, 33, 370218))
+(369.260009765625, 25.0, 15.0, datetime.datetime(2020, 12, 7, 12, 21, 34, 425303))
+(369.2099914550781, 31.31313131313131, 7.070707070707071, datetime.datetime(2020, 12, 7, 12, 22, 35, 452396))
+(369.2250061035156, 28.282828282828284, 18.181818181818183, datetime.datetime(2020, 12, 7, 12, 23, 36, 513309))
+(369.1300048828125, 12.121212121212121, 25.252525252525253, datetime.datetime(2020, 12, 7, 12, 24, 37, 389019))
+(369.19000244140625, 21.0, 12.0, datetime.datetime(2020, 12, 7, 12, 25, 38, 309703))
+(369.2099914550781, 27.0, 7.0, datetime.datetime(2020, 12, 7, 12, 26, 39, 239550))
+(369.1700134277344, 25.0, 9.0, datetime.datetime(2020, 12, 7, 12, 27, 40, 79299))
+(369.1600036621094, 27.272727272727273, 10.1010101010101, datetime.datetime(2020, 12, 7, 12, 28, 41, 77203))
+(369.20001220703125, 20.2020202020202, 17.171717171717173, datetime.datetime(2020, 12, 7, 12, 29, 42, 6815))
+(369.20001220703125, 29.0, 15.0, datetime.datetime(2020, 12, 7, 12, 30, 44, 40598))
+(369.17999267578125, 22.22222222222222, 12.121212121212121, datetime.datetime(2020, 12, 7, 12, 31, 45, 62610))
+(369.1600036621094, 20.0, 11.0, datetime.datetime(2020, 12, 7, 12, 32, 46, 15417))
+(369.1000061035156, 26.0, 19.0, datetime.datetime(2020, 12, 7, 12, 33, 47, 304053))
+(369.0799865722656, 23.0, 9.0, datetime.datetime(2020, 12, 7, 12, 34, 48, 317164))
+(369.114990234375, 25.0, 13.0, datetime.datetime(2020, 12, 7, 12, 35, 49, 367683))
+(369.1099853515625, 15.0, 18.0, datetime.datetime(2020, 12, 7, 12, 36, 50, 310607))
+(369.1899108886719, 22.0, 16.0, datetime.datetime(2020, 12, 7, 12, 37, 51, 275327))
+(369.125, 17.171717171717173, 13.131313131313131, datetime.datetime(2020, 12, 7, 12, 38, 52, 172550))
+(369.17498779296875, 30.303030303030305, 15.151515151515152, datetime.datetime(2020, 12, 7, 12, 39, 53, 170682))
+(369.1099853515625, 25.0, 12.0, datetime.datetime(2020, 12, 7, 12, 40, 54, 300990))
+(369.1099853515625, 25.0, 16.0, datetime.datetime(2020, 12, 7, 12, 41, 55, 249092))
+(369.1400146484375, 19.387755102040817, 13.26530612244898, datetime.datetime(2020, 12, 7, 12, 42, 56, 444327))
+(369.1499938964844, 23.0, 15.0, datetime.datetime(2020, 12, 7, 12, 43, 57, 411477))
+(369.1600036621094, 20.0, 12.0, datetime.datetime(2020, 12, 7, 12, 44, 58, 410072))
+(369.1700134277344, 27.551020408163264, 11.224489795918368, datetime.datetime(2020, 12, 7, 12, 46, 0, 289318))
+(369.1650085449219, 16.0, 12.0, datetime.datetime(2020, 12, 7, 12, 47, 1, 311700))
+(369.1388854980469, 24.0, 16.0, datetime.datetime(2020, 12, 7, 12, 48, 2, 319449))
+(369.1459045410156, 27.0, 16.0, datetime.datetime(2020, 12, 7, 12, 49, 3, 225496))
+(369.17498779296875, 17.0, 11.0, datetime.datetime(2020, 12, 7, 12, 50, 4, 193237))
+(369.1759033203125, 25.0, 18.0, datetime.datetime(2020, 12, 7, 12, 51, 5, 234643))
+(369.17498779296875, 24.0, 7.0, datetime.datetime(2020, 12, 7, 12, 52, 6, 158752))
+(369.0400085449219, 24.242424242424242, 14.141414141414142, datetime.datetime(2020, 12, 7, 12, 53, 7, 100285))
+(369.0299987792969, 31.0, 12.0, datetime.datetime(2020, 12, 7, 12, 54, 8, 222320))
+(369.0199890136719, 21.0, 11.0, datetime.datetime(2020, 12, 7, 12, 55, 9, 401527))
+(369.010009765625, 27.272727272727273, 15.151515151515152, datetime.datetime(2020, 12, 7, 12, 56, 10, 389433))
+(368.9150085449219, 24.0, 9.0, datetime.datetime(2020, 12, 7, 12, 57, 11, 306859))
+(368.9599914550781, 30.303030303030305, 13.131313131313131, datetime.datetime(2020, 12, 7, 12, 58, 12, 555716))
+(368.92999267578125, 30.303030303030305, 10.1010101010101, datetime.datetime(2020, 12, 7, 12, 59, 13, 668460))
+(368.78009033203125, 32.0, 7.0, datetime.datetime(2020, 12, 7, 13, 0, 14, 593224))
+(368.8388977050781, 24.0, 19.0, datetime.datetime(2020, 12, 7, 13, 1, 15, 701752))
+(368.7699890136719, 24.0, 15.0, datetime.datetime(2020, 12, 7, 13, 2, 16, 560004))
+(368.7799987792969, 31.0, 10.0, datetime.datetime(2020, 12, 7, 13, 3, 17, 634474))
+(368.7550048828125, 22.0, 7.0, datetime.datetime(2020, 12, 7, 13, 4, 18, 690827))
+(368.6924133300781, 30.303030303030305, 15.151515151515152, datetime.datetime(2020, 12, 7, 13, 5, 19, 691076))
+(368.6600036621094, 31.31313131313131, 10.1010101010101, datetime.datetime(2020, 12, 7, 13, 6, 20, 905376))
+(368.52099609375, 35.35353535353536, 17.171717171717173, datetime.datetime(2020, 12, 7, 13, 7, 21, 996962))
+(368.6763000488281, 34.343434343434346, 11.11111111111111, datetime.datetime(2020, 12, 7, 13, 8, 23, 120071))
+(368.6600036621094, 21.649484536082475, 17.52577319587629, datetime.datetime(2020, 12, 7, 13, 9, 24, 127433))
+(368.6300048828125, 25.0, 13.0, datetime.datetime(2020, 12, 7, 13, 10, 25, 145645))
+(368.6081848144531, 19.0, 19.0, datetime.datetime(2020, 12, 7, 13, 11, 26, 195193))
+(368.54998779296875, 34.0, 14.0, datetime.datetime(2020, 12, 7, 13, 12, 27, 243711))
+(368.55499267578125, 24.242424242424242, 16.161616161616163, datetime.datetime(2020, 12, 7, 13, 13, 28, 447066))
+(368.3900146484375, 28.0, 14.0, datetime.datetime(2020, 12, 7, 13, 14, 29, 591667))
+(368.3599853515625, 28.0, 11.0, datetime.datetime(2020, 12, 7, 13, 15, 30, 731510))
+(368.42999267578125, 25.252525252525253, 16.161616161616163, datetime.datetime(2020, 12, 7, 13, 16, 31, 825221))
+(368.4598083496094, 28.282828282828284, 16.161616161616163, datetime.datetime(2020, 12, 7, 13, 17, 32, 758676))
+(368.510009765625, 30.0, 16.0, datetime.datetime(2020, 12, 7, 13, 18, 33, 847171))
+(368.489990234375, 32.0, 9.0, datetime.datetime(2020, 12, 7, 13, 19, 34, 992830))
+(368.4599914550781, 35.0, 18.0, datetime.datetime(2020, 12, 7, 13, 20, 36, 57622))
+(368.56500244140625, 31.0, 13.0, datetime.datetime(2020, 12, 7, 13, 21, 37, 87530))
+Traceback (most recent call last):
+  File "FP_TweetMiner_SPY.py", line 180, in <module>
+    main()
+  File "FP_TweetMiner_SPY.py", line 131, in main
+    shareprice = si.get_live_price("SPY")
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/site-packages/yahoo_fin/stock_info.py", line 471, in get_live_price
+    df = get_data(ticker, end_date = pd.Timestamp.today() + pd.DateOffset(10))
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/site-packages/yahoo_fin/stock_info.py", line 79, in get_data
+    raise AssertionError(resp.json())
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/site-packages/requests/models.py", line 898, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/adamkratch/opt/anaconda3/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+(base) adamkratch@MacBook-Pro ArtsNCrafts % 
