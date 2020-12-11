@@ -5,13 +5,16 @@
   * Contact person: akratch@andrew.cmu.edu
   * bwilkins@andrew.cmu.edu
   
-* **Track**: TODO (one of Narrative, Model, or Interactive Visualization/Application)
+* **Track**: Narrative
 
 ## Work distribution
 
-Update towards the end of the project.
+Work was divided evenly amount group members. We were able to work together in person in order to achieve the end state. 
 
 ## Deliverables
+
+Main deliverable is our streamlit application: Final_Project_Streamlit.py. This file is self contained and can be run by simply downloading it
+and using the command "streamlit run Final_Project_Streamlit.py" 
 
 ### Proposal
 
