@@ -6,6 +6,6 @@ yahoofinancials
 yfinance
 matplotlib
 tweepy
-PIL
+regex
 datetime
 textblob
