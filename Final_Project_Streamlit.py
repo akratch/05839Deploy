@@ -1,7 +1,7 @@
 #Adam and Bryce's Final Project
 import tweepy
 from tweepy import OAuthHandler
-import re
+import regex as re
 import time
 from PIL import Image
 import pickle
