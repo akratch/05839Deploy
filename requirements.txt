@@ -6,7 +6,6 @@ yahoofinancials
 yfinance
 matplotlib
 tweepy
-re
 PIL
 datetime
 textblob
